@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body onload="loadMoisture()">
+
+    <div class="container h-100">
+        <div class="row h-100 justify-content-center align-items-center">
+            <h2>ESP8266 Moisture Server</h2>
+        </div>
+        <div id="firstSensor">
+            <div class="row h-100 justify-content-center align-items-center">
+                <p>
+                    <i class="fas fa-tint" style="color:#00add6;"></i>
+                    <span class="dht-labels">Moisture</span>
+                    <span id="moisture">%HUMIDITY%</span>
+                    <sup class="units">&percnt;</sup>
+                </p>
+            </div>
+            <div class="row h-100 justify-content-center align-items-center">
+                <span id="loading"></span>
+            </div>
+            <div class="row h-100 justify-content-center align-items-center">
+                <a class="btn btn-primary" href="#" role="button" id="btn">Link</a>
+            </div>
+
+        </div>
+
+
+        <script src="./main.js"></script>
+
+</body>
+
+</html>
